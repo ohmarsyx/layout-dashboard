@@ -72,7 +72,7 @@ body {
   gap: 1rem;
 }
 .sidebar-menu-item a span {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .bottom-sidebar {
@@ -95,4 +95,26 @@ body {
 .main-container {
   display: flex;
   flex: 8;
+}
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    align-items: center;
+}
+.header-container {
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    height: 45%;
+}
+.activity-container {
+    display: flex;
+    width: 100%;
+    height: 45%;
 }
