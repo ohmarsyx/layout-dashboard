@@ -39,12 +39,13 @@ const checkResponsive = () => {
   const main = document.querySelector(".main-container");
 
   if (window.matchMedia("(max-width: 550px)").matches) {
+    main.style.display = "none";
     sidebar.style.width = "100vw";
     sidebar.style.backgroundColor = "white";
   } else {
-    sidebar.style.width = "340px"; 
-    sidebar.style.backgroundColor = ""; 
-    main.style.display = "flex"; 
+    sidebar.style.width = "340px";
+    sidebar.style.backgroundColor = "";
+    main.style.display = "flex";
   }
 };
 
