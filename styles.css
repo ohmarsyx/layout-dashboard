@@ -6,7 +6,7 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "SUSE", sans-serif;
 }
 .container {
@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   flex: 2;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  min-height: 650px;
   max-width: 340px;
 }
 .top-sidebar {
@@ -126,12 +125,12 @@ body {
   font-size: 1.2rem;
   width: 100%;
 }
+
 .dashboard-container {
   display: flex;
   width: 100%;
   flex-direction: column;
 }
-
 .title-header-container {
   display: flex;
   gap: 1rem;
@@ -168,18 +167,25 @@ body {
   gap: 1.4rem;
   font-size: 1.8rem;
 }
+.dashboard-item > p {
+    font-size: 2rem;
+}
+.dashboard-icon {
+    font-size: 2.6rem;
+}
+.dashboard-topic {
+    font-size: 2.6rem;
+}
 .activity-container {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 1rem 0 2rem 0;
 }
 .table-container {
   width: 95%;
   font-size: 1.4rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
   overflow-x: auto;
 }
 table {
@@ -214,11 +220,26 @@ tr:nth-child(even) {
     grid-template-columns: repeat(2, 1fr);
     flex: 1 1 100%;
   }
+  .dashboard-content > div:nth-child(3) {
+    grid-column: span 2;
+  }
+  .dashboard-item > p {
+    font-size: 1.4rem;
+  }
+  .dashboard-item > span, .dashboard-icon, .dashboard-item > .dashboard-topic{
+    font-size: 2.2rem;
+  }
+  .dashboard-item {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
   .dashboard-content {
     grid-template-columns: repeat(1, 1fr);
     flex: 1 1 100%;
+  }
+  .dashboard-content > div:nth-child(3) {
+    grid-column: span 1;
   }
 }
