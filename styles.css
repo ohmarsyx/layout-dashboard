@@ -30,6 +30,7 @@ body {
 }
 .x-icon {
   display: none;
+  cursor: pointer;
 }
 .top-container-sidebar {
   display: flex;

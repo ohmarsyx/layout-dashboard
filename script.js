@@ -28,6 +28,7 @@ const handleXIcon = () => {
     main.style.display = "flex";
   } else {
     sidebar.style.display = "flex";
+    main.stle.display = "none"
   }
 };
 
