@@ -38,7 +38,10 @@ const checkResponsive = () => {
   const sidebar = document.querySelector(".sidebar");
   const main = document.querySelector(".main-container");
 
-  if (window.matchMedia("(max-width: 550px)").matches) {
+  if (
+    window.matchMedia("(max-width: 550px)").matches &&
+    sidebar.style.display == "flex"
+  ) {
     main.style.display = "none";
     sidebar.style.width = "100vw";
     sidebar.style.backgroundColor = "white";
