@@ -193,3 +193,16 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+@media only screen and (max-width: 1300px) {
+    .sidebar-header {
+        min-width: 0;
+    }
+    .sidebar-menu-item a p, .sidebar-header p {
+        display: none;
+    }
+    .sidebar {
+        max-width: 110px;
+    }
+    
+}
