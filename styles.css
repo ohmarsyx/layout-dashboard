@@ -17,7 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   flex: 2;
-  overflow-y: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  min-height: 650px;
 }
 .top-sidebar {
   display: flex;
@@ -28,36 +29,45 @@ body {
   align-items: center;
 }
 .top-container-sidebar {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    padding: 1rem;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 1rem;
+  gap: 2rem;
 }
 .sidebar-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .text-sidebar-header {
-    font-size: 1.8rem;
-    font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 .header-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 999rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 999rem;
 }
 .sidebar-menu {
-    list-style: none;
-    display: flex ;
-    flex-direction: column;
-    gap: 1.6rem;
-    font-size: 1.6rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-size: 1.6rem;
 }
-.sidebar-menu-item a{
-    text-decoration: none;
-    color: black;
+.top-sb {
+  min-height: 550px;
+}
+.bottom-sb {
+  min-height: 180px;
+}
+.sidebar-menu-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 1rem;
 }
 
 .bottom-sidebar {
@@ -65,8 +75,18 @@ body {
   flex-direction: column;
   width: 100%;
   height: 20%;
-}
+  border-top: 1px solid #e6e6e6;
+  align-items: center;
+  padding: 1rem;
 
+}
+.bottom-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 1rem;
+  gap: 2rem;
+}
 
 .main-container {
   display: flex;
