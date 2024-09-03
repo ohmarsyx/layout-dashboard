@@ -28,6 +28,9 @@ body {
   padding: 1.4rem 1rem;
   align-items: center;
 }
+.x-icon {
+  display: none;
+}
 .top-container-sidebar {
   display: flex;
   flex-direction: column;
@@ -251,8 +254,20 @@ tr:nth-child(even) {
 @media only screen and (max-width: 550px) {
     .sidebar {
         display: none;
+        min-width: none;
+        max-width: none;
     }
-    .dashboard-container, .activity-container {
+    .sidebar-menu-item a p,
+    .sidebar-header p {
+      display: flex;
+    }
+    .dashboard-container, .activity-container > .title-header-container {
         align-items: center;
+        justify-content: center;
     }
+    .x-icon {
+      display: flex;
+      margin: 2rem;
+    }
+    
 }
